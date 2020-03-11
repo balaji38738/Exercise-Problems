@@ -3,6 +3,7 @@
 #Problem Statement :- Generating 5 two digit numbers.Finding sum and average of them
 #Author :- Balaji Ijjapwar
 #Date :- 11 March 2020
+
 sum=$(( RANDOM % 90 + 10 ))  #generates numbers between 10 to 90
 sum=$(( RANDOM % 90 + 10 + sum ))
 sum=$(( RANDOM % 90 + 10 + sum ))
