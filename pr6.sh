@@ -1,5 +1,9 @@
 #! /bin/bash
 
+#Problem Statement :- Finding day on a given date
+#Author :- Balaji Ijjapwar
+#Date :- 11 March 2020
+
 m=$1
 d=$2
 y=$3
