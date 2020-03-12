@@ -6,21 +6,7 @@
 
 read -p "Enter year: " year
 
-copy=$year
-digits=0
-
-#loop for counting digits in year
-while [ $copy -ne 0 ]
-do
-	digits=$(( digits + 1 ))
-	copy=$(( copy / 10 ))
-	if [ $digits -gt 4 ];
-	then
-		break;
-	fi
-done
-
-if [ $digits -ne 4 ];
+if [[ $year -ge 1000 && $year -lt 10000 ];
 then
 	echo "Invalid input";
 else
