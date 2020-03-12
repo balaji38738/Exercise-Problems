@@ -17,16 +17,16 @@ then
          echo "True";
       elif [[ $month -eq 3 && $day -ge 20 ]];
       then
-			echo "True";
-		elif [[ $month -eq 6 && $day -le 20 ]];
-		then
-			echo "True";
-		else
-     	   echo "False";
-		fi
-	else
-		echo "Invalid date";
-	fi
+	 echo "True";
+      elif [[ $month -eq 6 && $day -le 20 ]];
+      then
+         echo "True";
+      else
+     	 echo "False";
+      fi
+    else
+       echo "Invalid date";
+    fi
 else
    echo "Invalid date";
 fi
