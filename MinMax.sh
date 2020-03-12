@@ -20,27 +20,27 @@ then
 	echo "Maximum number is $number2";
 elif [[ $number3 -ge $number1 && $number3 -ge $number2 && $number3 -ge $number4 && $number3 -ge $number5 ]];
 then
-   echo "Maximum number is $number3";
+   	echo "Maximum number is $number3";
 elif [[ $number4 -ge $number1 && $number4 -ge $number2 && $number4 -ge $number3 && $number4 -ge $number5 ]];
 then
-   echo "Maximum number is $number4";
+	echo "Maximum number is $number4";
 else
 	echo "Maximum number is $number5";
 fi
 
 if [[ $number1 -le $number2 && $number1 -le $number3 && $number1 -le $number4 && $number1 -le $number5 ]];
 then
-   echo "Minimum number is $number1";
+   	echo "Minimum number is $number1";
 elif [[ $number2 -le $number1 && $number2 -le $number3 && $number2 -le $number4 && $number2 -le $number5 ]];
 then
-   echo "Minimum number is $number2";
+   	echo "Minimum number is $number2";
 elif [[ $number3 -le $number1 && $number3 -le $number2 && $number3 -le $number4 && $number3 -le $number5 ]];
 then
-   echo "Minimum number is $number3";
+   	echo "Minimum number is $number3";
 elif [[ $number4 -le $number1 && $number4 -le $number2 && $number4 -le $number3 && $number4 -le $number5 ]];
 then
-   echo "Minimum number is $number4";
+   	echo "Minimum number is $number4";
 else
-   echo "Minimum number is $number5";
+   	echo "Minimum number is $number5";
 fi
 
