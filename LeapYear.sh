@@ -9,6 +9,7 @@ read -p "Enter year: " year
 copy=$year
 digits=0
 
+#loop for counting digits in year
 while [ $copy -ne 0 ]
 do
 	digits=$(( digits + 1 ))
