@@ -6,16 +6,9 @@
 
 read -p "Enter number: " number
 
-if [ $number -eq 1 ];
-then
-	echo "unit";
-elif [ $number -eq 10 ];
-then
-	echo "ten";
-elif [ $number -eq 100 ];
-then
-	echo "hundred";
-elif [ $number -eq 1000 ];
-then
-	echo "thousand";
-fi
+case $number in
+	1) echo "unit";;
+	10) echo "ten";;
+	100) echo "hundred";;
+	1000) echo "thousand";;
+esac

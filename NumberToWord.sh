@@ -6,36 +6,16 @@
 
 read -p "Enter single digit: " digit
 
-if [ $digit -eq 0 ];
-then
-	echo "Zero";
-elif [ $digit -eq 1 ];
-then
-	echo "Zero";
-elif [ $digit -eq 2 ];
-then
-	echo "Two";
-elif [ $digit -eq 3 ];
-then
-	echo "Three";
-elif [ $digit -eq 4 ];
-then
-	echo "Four";
-elif [ $digit -eq 5 ];
-then
-	echo "Five";
-elif [ $digit -eq 6 ];
-then
-	echo "Six";
-elif [ $digit -eq 7 ];
-then
-	echo "Seven"
-elif [ $digit -eq 8 ];
-then
-	echo "Eight"
-elif [ $digit -eq 9 ];
-then
-	echo "Nine";
-else
-	echo "Invalid input";
-fi
+case $digit in
+	0) echo "Zero";;
+	1) echo "One";;
+	2) echo "Two";;
+	3) echo "Three";;
+	4) echo "Four";;
+	5) echo "Five";;
+	6) echo "Six";;
+	7) echo "Seven";;
+	8) echo "Eight";;
+	9) echo "Nine";;
+esac
+
