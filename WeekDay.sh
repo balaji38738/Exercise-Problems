@@ -14,19 +14,19 @@ then
 	echo "Monday";
 elif [ $dayNumber -eq 2 ];
 then
-   echo "Tuesday";
+   	echo "Tuesday";
 elif [ $dayNumber -eq 3 ];
 then
-   echo "Wednesday";
+   	echo "Wednesday";
 elif [ $dayNumber -eq 4 ];
 then
-   echo "Thursday";
+   	echo "Thursday";
 elif [ $dayNumber -eq 5 ];
 then
-   echo "Friday"
+   	echo "Friday"
 elif [ $dayNumber -eq 6 ];
 then
-   echo "Saturday";
+   	echo "Saturday";
 else
 	echo "Invalid input";
 fi
