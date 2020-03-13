@@ -6,9 +6,7 @@
 
 read -p "Enter number: " number
 
-lastNumber=$(( number / 2 + 1 )) #Maximum possible prime factor
-
-for (( num=2; num<=$lastNumber; num++ ))
+for (( num=2; num<=$number; num++ ))
 do
 	for (( ; $(( number % num ))==0; ))
 	do
