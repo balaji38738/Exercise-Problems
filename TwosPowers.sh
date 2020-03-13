@@ -8,7 +8,7 @@ power=$1;
 value=1;
 count=0;
 
-while [ $count -le $power ]
+while [[ $value -lt 256 && $count -le $power ]]
 do
 	value=`echo "2^$count" | bc`
 	echo "2^$count = $value"
