@@ -1,16 +1,20 @@
 #! /bin/bash
 
-#Problem Statement:- FInd prime factors of a number
+#Problem Statement:- Find prime factors of a number
 #Author:- Balaji Ijjapwar
 #Date:- 13 March 2020
 
 read -p "Enter number: " number
 
-for (( num=2; num<=$number; num++ ))
+count=0
+
+for (( divisor=2; divisor<=$number; divisor++ ))
 do
-	for (( ; $(( number % num ))==0; ))
+	while [ $(( number % divisor )) -eq 0 ]
 	do
-		echo $num
-		number=$(( number / num ))
+		primeFactors[((count++))]=$divisor
+		number=$(( number / divisor ))
 	done
 done
+
+echo "The Prime factors are ${primeFactors[@]}"
