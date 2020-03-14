@@ -15,7 +15,7 @@ do
 	fi
 done
 
-if [[ $i -eq $(( lastCheck + 1 )) && $i -ne 1 ]]
+if [[ $i -eq $(( lastCheck + 1 )) && $number -ne 1 ]]
 then
 	echo "The number is prime"
 else
