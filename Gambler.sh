@@ -7,7 +7,6 @@
 WIN=1;
 LOSS=0;
 GOAL=200;
-WIN_AMOUNT=10
 BET=1
 
 amount=100;
@@ -22,7 +21,7 @@ do
 				amount=$(( amount - BET ))
 				(( lossCount++ ));;
 		$WIN)
-				amount=$(( amount + WIN_AMOUNT ))
+				amount=$(( amount + BET ))
 				(( winCount++ ));;
 		esac
 done
