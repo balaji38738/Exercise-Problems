@@ -6,9 +6,11 @@
 
 power=$1;
 value=1;
+count=0;
 
-for (( i=0; i<=power; i++ ))
+while [[ $value -lt 256 && $count -le $power ]]
 do
-	value=`echo "2^$i" | bc`
-	echo "2^$i = $value"
+	value=`echo "2^$count" | bc`
+	echo "2^$count = $value"
+	(( count++ ))
 done
