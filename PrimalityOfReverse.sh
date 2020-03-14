@@ -19,7 +19,7 @@ function reversingNumber() {
 }
 
 function isPrime() {
-	$number1=$1
+	number1=$1
 	lastCheck=`echo "sqrt($number1)" | bc` #Last number to to check with for primality
 
 	for (( i=2; i<=$lastCheck; i++ ))
