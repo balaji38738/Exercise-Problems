@@ -1,3 +1,4 @@
+
 #! /bin/bash
 
 #Problem Statement:- Find prime factors of a number
@@ -7,14 +8,16 @@
 read -p "Enter number: " number
 
 count=0
+divisor=2
 
-for (( divisor=2; divisor<=$number; divisor++ ))
+echo -n "Prime factors of $number are "
+while [ $divisor -le $number ]
 do
 	while [ $(( number % divisor )) -eq 0 ]
 	do
-		primeFactors[((count++))]=$divisor
+		echo -n "$divisor "
 		number=$(( number / divisor ))
 	done
+	((divisor++))
 done
 
-echo "The Prime factors are ${primeFactors[@]}"
