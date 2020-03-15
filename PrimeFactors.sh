@@ -12,9 +12,7 @@ for (( divisor=2; divisor<=$number; divisor++ ))
 do
 	while [ $(( number % divisor )) -eq 0 ]
 	do
-		primeFactors[((count++))]=$divisor
+		echo -n "$divisor"
 		number=$(( number / divisor ))
 	done
 done
-
-echo "The Prime factors are ${primeFactors[@]}"
