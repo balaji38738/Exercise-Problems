@@ -7,12 +7,14 @@
 read -p "Enter number: " number
 
 count=0
+divisor=2
 
-for (( divisor=2; divisor<=$number; divisor++ ))
+while [ divisor -le $number ]
 do
 	while [ $(( number % divisor )) -eq 0 ]
 	do
 		echo -n "$divisor"
 		number=$(( number / divisor ))
 	done
+((divisor++))
 done
